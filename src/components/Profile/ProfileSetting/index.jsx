@@ -1,5 +1,6 @@
 import {useDispatch, useSelector} from 'react-redux'
 import {useState, useRef} from 'react'
+import {updateAvatar} from '../../../reducer/userReducer'
 
 import {API_URL} from '../../../config'
 
@@ -9,6 +10,7 @@ import defaultHeader from '../../../assets/loginTitle.png'
 
 const ProfileSetting = () =>{
 	const currentUser = useSelector(state=>state.user.currentUser)
+	const dispatch = useDispatch()
 	
 	const headerInput = useRef(null)
 	const avatarInput = useRef(null)
@@ -25,7 +27,10 @@ const ProfileSetting = () =>{
 	const avatar = API_URL + 'image/' + currentUser.avatar
 	
 	const updateHandler = () =>{
+		const img = avatarInput.current.value.split('\\')
+		const newAvatar = currentUser.login + '/' + img[img.length - 1]
 		updateProfile(nickname, bio, birthDay, avatarInput.current.files[0], headerInput.current.files[0])
+		dispatch(updateAvatar(newAvatar))
 	}
 	
 	const headerClickHandler = () =>{

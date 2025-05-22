@@ -1,4 +1,6 @@
 import { useSelector, useDispatch } from 'react-redux'
+import { useEffect } from 'react'
+
 import { Link } from 'react-router-dom'
 import { logout } from '../../reducer/userReducer'
 import { setDropDown } from '../../reducer/appReducer'
@@ -19,6 +21,10 @@ const Header = ()=>{
 	const handlerDropDown = () =>{
 		dispatch(setDropDown())
 	}
+	
+	useEffect(()=>{
+		console.log('update')
+	}, [currentUser])
 	
 	return(
 		<header>

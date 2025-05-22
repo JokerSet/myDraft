@@ -32,10 +32,13 @@ export const userReducer = createSlice({
 		},
 		unsetSub: (state, action) =>{
 			state.selectedUser = {...state.selectedUser, sub: false}
+		},
+		updateAvatar: (state, action) =>{
+			state.currentUser = {...state.currentUser, avatar: action.payload}
 		}
 	}
 })
 
-export const {setUser, logout, setUserList, setSelectedUser, setSub, unsetSub} = userReducer.actions
+export const {setUser, logout, setUserList, setSelectedUser, setSub, unsetSub, updateAvatar} = userReducer.actions
 
 export default userReducer.reducer
