@@ -1,0 +1,27 @@
+@use "../../../vars" as *;
+
+.popUpWindow{
+	position: fixed;
+    background-color: #000000cf;
+    width: 100%;
+    height: 100%;
+    top: 50px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	
+	.popUpAction{
+		display: flex;
+		flex-direction: column;
+		width: 50%;
+		background-color: $primary;
+		padding: 10px 5px;
+		border: 1px $white solid;
+		
+		span{
+			align-self: center;
+		}
+	}
+	
+}

@@ -1,0 +1,102 @@
+@use '../../vars' as *;
+
+header{
+	position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+	background-color: $primary;
+	
+	.header{
+		display:flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	
+	.logoHeader{
+		font-size: 25px;
+	}
+	
+	.navHeader{
+		
+		ul{
+			list-style: none;
+			display: flex;
+			gap: 20px;
+			
+			li a{
+				text-decoration: none;
+				color: $white;
+				transition: color 0.3s ease;
+			}
+			
+			li a:hover{
+				color: $link;
+			}
+			
+		}
+		
+	}
+	
+	.userMenu{
+		display: flex;
+		gap: 5px;
+		background: none;
+		color: $white;
+		border: none;
+		cursor: pointer;
+		align-items: center;
+	}
+
+	.avatarSceleton{
+		height: 25px;
+		width: 25px;
+		border-radius: 15px;
+		background-color: gray;
+	}
+
+	.userNameSceleton{
+		height: 15px;
+		width: 35px;
+		background-color: gray;
+	}
+	
+}
+
+.userMenu-dropDown{
+		position: absolute;
+		right: 85px;
+		top: 45px;
+		display: none;
+	}
+	
+	.dropDownList{
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.dropDownItem{
+		padding: 0;
+		
+		a{
+			color:$white;
+			text-decoration: none;
+			transition: color 0.3s ease;
+		}
+		
+		a:hover{
+			color: $link
+		}
+	}
+	
+	.btnLogout{
+		color: $white;
+		text-decoration: none;
+		cursor: pointer;
+		transition: color 0.3s ease;
+	}
+	
+	.btnLogout:hover{
+		color: $link;
+	}

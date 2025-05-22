@@ -1,0 +1,31 @@
+@use "vars" as *;
+
+@use "components/Header/header";
+@use "components/Auth/auth";
+@use "components/Main/main";
+@use "components/Main/PostMenu/postMenu";
+@use "components/Main/PostList/postList";
+@use "components/Main/PostList/popUpWindow";
+@use "components/Main/SearchList/searchList";
+@use 'components/Profile/ProfileMenu/profileMenu';
+@use 'components/Profile/ProfileSetting/profileSetting';
+@use "utils";
+
+
+body{
+	background-color: $primary;
+    color: $white;
+	padding-top: 50px;
+}
+
+.container{
+  max-width: $container-width;
+  margin: 0 auto;
+  /*align-items: center;*/
+  padding: 0 20px;
+}
+
+a{
+	text-decoration: none;
+	color: $white;
+}

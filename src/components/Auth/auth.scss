@@ -1,0 +1,83 @@
+@use '../../vars' as *;
+
+.auth{
+	display:flex;
+	justify-content:center;
+	position: relative;
+	
+	.frontAuth{
+		position: absolute;
+		top:0;
+		left:0;
+		right:0;
+		bottom:0;
+		width: 100%;
+		text-align:center;
+		
+		span{
+			font-size: 60px;
+		}
+		
+	}
+	
+	.formAuth{
+		background-color: $primary;
+		width: 30%;
+		margin: 30px auto;
+		padding: 10px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		
+		span{
+			font-size:35px;
+		}
+		
+		.formItems{
+			display:flex;
+			flex-direction:column;
+		}
+		
+		.formItem{
+			margin: 5px 0 5px 0;
+			gap: 5px;
+			display:flex;
+			justify-content: flex-end;
+			
+			span{
+				font-size: 20px;
+			}
+			
+		}
+		
+		.inputArea{
+			background-color: $primary;
+			border: 1px solid $white;
+			color: $white;
+		}
+		
+		.disable{
+			display: none;
+		}
+		
+		.formInteractive{
+			font-size: 13px;
+			display:flex;
+			justify-content: flex-end;
+			
+			span{
+				font-size: 13px;
+				cursor: pointer;
+				margin: 0 5px;
+			}
+			
+			span:hover{
+				color: $link; 
+			}
+			
+		}
+
+		
+	}
+	
+}

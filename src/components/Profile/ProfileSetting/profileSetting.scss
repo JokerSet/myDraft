@@ -1,0 +1,58 @@
+@use "../../../vars" as *;
+
+.changeHeader{
+	position: absolute;
+    width: 100%;
+    max-width: 600px;
+    max-height: 200px;
+    height: 100%;
+    align-content: center;
+    text-align: center;
+    background-color: #80808085;
+	display: none;
+	justify-content: center;
+    align-items: center;
+}
+
+#headerInput{
+	display: none;
+}
+
+.changeAvatar{
+	position: absolute;
+    width: 100%;
+    max-width: 95px;
+    max-height: 95px;
+    height: 100%;
+    align-content: center;
+    text-align: center;
+    background-color: #80808085;
+	display: none;
+	border-radius: 45px;
+}
+
+#avatarInput{
+	display: none;
+}
+
+.settingInput{
+	background-color: $primary;
+    width: 100%;
+    min-height: 25px;
+    resize: none;
+    overflow: hidden;
+    padding: 0 8px;
+    box-sizing: border-box;
+    color: $white;
+	margin: 5px 0;
+}
+
+.inputItem{
+	padding: 0 20px;
+}
+
+#birthDayInput{
+	background-color: #0a0a0a;
+	border: 1px solid white;
+	color: white;
+}

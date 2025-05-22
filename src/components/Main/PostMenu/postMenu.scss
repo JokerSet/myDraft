@@ -1,0 +1,81 @@
+@use "../../../vars" as *;
+
+.postMenu{
+	.postInput{
+		background-color: $primary;
+		border-bottom: 1px solid $white;
+		border-top: none;
+		border-right: none;
+		border-left: none;
+		width: 100%;
+		min-height: 25px;
+		resize: none;
+		overflow: hidden;
+		padding: 0 8px;
+		box-sizing: border-box;
+		color: $white;
+	}
+	
+	.postAction{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	
+	.postTextAdder{
+		ul{
+			list-style: none;
+			display: flex;
+			gap: 10px;
+			padding: 0;
+			margin: 0;
+		}
+		
+		ul li{
+			cursor: pointer;
+		}
+	}
+	
+	.imageInput{
+		display:none;
+	}
+
+}
+	
+.emojiDropDown{
+	position: absolute;
+	z-index: 100;
+	background-color: $primary;
+	border: 1px solid $white;
+	max-width: 200px;
+	max-height: 200px;
+	overflow-y: auto;
+	display: none;
+}
+
+.inputText{
+	display:none;
+	border: 1px solid white;
+	border-radius: 10px;
+	padding: 5px;
+	cursor: pointer;
+	margin: 5px 0;
+}
+
+.inputText:hover{
+	background-color: gray;
+}
+
+.repostContent{
+	border: 1px solid white;
+    padding: 5px;
+    border-radius: 10px;
+	margin: 5px 0;
+	display: none;
+	cursor: pointer;
+}
+
+.repostContent:hover{
+	background-color: gray;
+
+}

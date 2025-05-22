@@ -1,0 +1,94 @@
+@use "../../../vars" as *;
+
+.profile{
+	border: 1px solid $white;
+	display: flex;
+	flex-direction: column;
+	padding: 0 0 5px 0;
+	
+	.profileHeader{
+		width: 100%;
+		height: 100%;
+		display: flex;
+		
+		img{
+			max-width: 600px;
+			width: 100%;
+			max-height: 200px;
+			object-fit: cover;
+		}
+		
+	}
+	
+	.profileTop{
+		display:flex;
+		justify-content: space-between;
+		align-items:flex-end;
+		padding: 0 15px;
+		margin: -65px 0 0;
+		z-index: 10;
+	}
+	
+	.profileAction{
+	
+	}
+	
+	.profileName{
+		padding: 0 20px;
+		display: flex;
+		flex-direction: column;
+		font-size: 25px;
+		
+		span{
+			color: gray;
+			font-size: 15px;
+		}
+		
+	}
+	
+	.profileBio{
+		padding: 0 20px;
+		margin: 5px 0 0;
+	}
+	
+	.profileList{
+		ul{
+			list-style: none;
+			display: flex;
+			padding: 0 20px;
+			margin: 0;
+			gap: 20px;
+			color: gray;
+			flex-wrap: wrap;
+			row-gap:0px;
+		}
+	}
+	
+	.profileLink{
+		color: $link;
+		cursor: pointer;
+		text-decoration: none;
+	}
+	
+	.profileLink:hover{
+		text-decoration: underline;
+	}
+	
+	.profileStatic{
+		padding: 0 20px;
+		display: flex;
+		gap: 20px;
+	}
+	
+	.profileStaticItem{
+		span{
+			color: gray;
+			cursor: pointer;
+		}
+	}
+	
+	.profileStaticItem:hover{
+		text-decoration: underline;
+	}
+	
+}

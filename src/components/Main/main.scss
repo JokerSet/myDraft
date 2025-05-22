@@ -1,0 +1,27 @@
+@use "../../vars" as *;
+
+.main{
+	display: flex;
+	height: 100%;
+	width:100%;
+	justify-content: center;
+	gap: 10px;
+	align-items: flex-start;
+	
+	.mainList{
+		max-width: $mainList-width;
+		width: 100%;
+		padding: 0 10px 0;
+	}
+	
+	.searchList{
+		max-width: $searchList-width;
+		height: 100%;
+		width: 100%;
+		padding: 0 10px 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	
+}
