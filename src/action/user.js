@@ -54,7 +54,6 @@ export const  signInAction = (login, password)=>{
 }
 
 export const authRequest = () =>{
-	console.log(process.env.APIURL)
 	return async dispatch =>{
 		try{
 			const response = await axios.get(API_URL+'auth', 
