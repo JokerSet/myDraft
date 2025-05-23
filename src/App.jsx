@@ -6,7 +6,7 @@ import {Routes, Route} from 'react-router-dom'
 import {authRequest} from './action/user'
 
 import Header from './components/Header'
-import Signin from './components/Signin/index.jsx'
+import Signin from './components/SIgnin'
 import Signup from './components/Signup'
 import Main from './components/Main'
 import Profile from './components/Profile'
